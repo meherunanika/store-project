@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Anika</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa:700" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.1/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+
+    <div id="loading">
+        <div id="spinner"></div>
+    </div>
+    <div id="particles-js"></div>
+    <div id="box">
+        <div class="box1 onlywide animated bounceOutLeft" style="animation-delay:1.7s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutLeft" style="animation-delay:1.9s;"></div>
+        <div class="box2 animated bounceOutRight" style="animation-delay:1.9s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.8s;"></div>
+        <div class="box2 onlywide animated bounceOutRight" style="animation-delay:1.7s;"></div>
+    </div>
+    <a id="about" onclick="showabout()" class="animated fadeIn" style="animation-delay:2.2s;">projects</a>
+    <a id="work" onclick="showwork()" class="animated fadeIn" style="animation-delay:2.2s;">resume</a>
+    <a id="contact" onclick="showcontact()" class="animated fadeIn" style="animation-delay:2.2s;">contact</a>
+    <div id="middle" class="animated slideInDown" style="animation-delay:2.0s;">
+        <h1 style="color: white;">Meherun Nesa Anika</h1>
+        <h2>Web Developer</h2>
+        <div id="menu">
+            <a onclick="showabout()">projects</a>
+            <a onclick="showwork()">resume</a>
+            <a onclick="showcontact()">contact</a>
+        </div>
+        <table>
+                <tr>
+                    <td class="animated zoomIn" style="animation-delay:2.2s;"><a class="social"><i class="fab fa-facebook"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.4s;"><a class="social"><i class="fab fa-twitter"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.6s;"><a class="social"><i class="fab fa-instagram"></i></a></td>
+                    <td class="animated zoomIn" style="animation-delay:2.8s;"><a class="social"><i class="fab fa-dribbble"></i></a></td>
+                </tr>
+        </table>
+    </div>
+    <div id="work_container" class="container">
+        <div onclick="closework()"><i class="fas fa-angle-right"></i></div>
+        <h1>resume.</h1>
+        <section>
+            <p>
+                Seasoned web developer with a strong focus on innovation and user-centric design. Brings extensive experience in crafting responsive, mobile-friendly websites that deliver exceptional user experiences. Specialized in optimizing website performance and implementing the latest technologies. Proven ability to lead development teams and communicate complex technical concepts to non-technical stakeholders.  </p>
+            <div id="used">
+                <div><i class="fas fa-circle"></i>&nbsp;HTML5</div>
+                <div><i class="fas fa-circle"></i>&nbsp;CSS3</div>
+                <div><i class="fas fa-circle"></i>&nbsp;Javascript</div>
+            </div>
+            <button onclick="location.href='anika-cv.pdf'" class="btn_two">resume</button>
+        </section>
+    </div>
+    <div id="about_container" class="container">
+            <div onclick="closeabout()"><i class="fas fa-angle-left"></i></div>
+            <h1>projects.</h1>
+            <section>
+                <div class="image-grid">
+                    <img class="image-grid-col-3 image-g onclick" src="image/project-1.jpg" alt="architecture">
+                    <img src="image/project-2.png" alt="architecture">
+                    <img src="image/project-3.jpg" alt="architecture">
+                    <img src="image/project-4.png" alt="architecture">
+                    <img src="image/project-5.png" alt="architecture">
+                    <img src="image/project-6.png" alt="architecture">
+                    <img src="image/project-7.png" alt="architecture">
+                    <img src="image/project-8.jpg" alt="architecture">
+                </div>
+            </section>
+        </div>
+          <div id="contact_container" class="container">
+            <div onclick="closecontact()"><i class="fas fa-angle-down"></i></div>
+            <h1>contact.</h1>
+            <section>
+                <h2>contact me</h2>
+                <p>
+                   <!-- <form>
+                        <input type="text" placeholder="name" required>
+                        <input type="email" placeholder="email" required><br>
+                        <textarea placeholder="your message" required rows="5"></textarea><br>
+                        <button class="btn_one">send</button>
+                    </form> -->
+                    <form action="#">
+                        <div class="form-group">
+                            <label for="name">NAME:</label>
+                            <input type="text" class="form-control" id="name" placeholder="enter name" name="name">
+                          </div>
+            
+                      <div class="form-group">
+                        <label for="email">EMAIL:</label>
+                        <input type="email" class="form-control" id="email" placeholder="enter email" name="email">
+                      </div>
+                      <div class="form-group">
+                        <label for="pwd">PASSWORD:</label>
+                        <input type="password" class="form-control" id="psw" placeholder="enter password" name="pwd">
+                      </div>
+                     
+                      <button  class="btn_one" type="button" onclick="saveData()" id="save_btn" class="btn btn-default">Submit</button>
+                    </form>
+                </p>
+            </section>
+        </div>
+        <div id="footer">
+            made on MIST by Anika <br> <a href="#">ANIKA</a>
+        </div>
+    <script src="index.js" type="text/javascript"></script>
+    <script src="particles.js"></script>
+    <script src="app.js"></script>
+    <script>
+        function saveData()
+        {
+        let name,email,psw;
+        name=document.getElementById("name").value;
+        email=document.getElementById("email").value;
+        
+        psw=document.getElementById("psw").value;
+        
+        localStorage.setItem("name",name)
+        localStorage.setItem("email",email)
+        localStorage.setItem("psw",psw)
+        }
+    </script>
+</body>
+</html>
+
+
+<!---  <div class="container">
+        <h2>Reg. Form</h2>
+        <form action="#">
+            <div class="form-group">
+                <label for="name">Name:</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter email" name="email">
+              </div>
+
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" class="form-control" id="email" placeholder="Enter email" name="email">
+          </div>
+          <div class="form-group">
+            <label for="pwd">Password:</label>
+            <input type="password" class="form-control" id="psw" placeholder="Enter password" name="pwd">
+          </div>
+         
+          <button type="button" onclick="saveData()" id="save_btn" class="btn btn-default">Submit</button>
+        </form>
+      </div>
+      
+      </body>
+      <script>
+function saveData()
+{
+let name,email,psw;
+name=document.getElementById("name").value;
+email=document.getElementById("email").value;
+
+psw=document.getElementById("psw").value;
+
+localStorage.setItem("name",name)
+localStorage.setItem("email",email)
+localStorage.setItem("psw",psw)
+}
+          </script>
+      </html>
+      --->
